@@ -1,0 +1,32 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  background: #000;
+}
+.slideshow {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  transition: opacity 1s;
+  z-index: 0;
+  opacity: 0;
+}
+.current {
+  z-index: 1;
+  opacity: 1;
+}
+.sliding {
+  z-index: 2;
+  opacity: 1;
+  transition: 1s opacity 1s;
+}
